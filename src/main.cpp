@@ -92,25 +92,25 @@ static int8_t i =0;
 static uint8_t j =0;
 static uint8_t k =127;
   display.clearDisplay(); 
-  display.setTextSize(2); // Draw 2X-scale text
+  display.setTextSize(2);              // Draw 2X-scale text
   display.setTextColor(WHITE, BLACK);
   display.setCursor(16,0);             // Start at top-left corner
   display.print("CodyTech"); 
   display.setCursor(0,16);             // Start at top-left corner
   display.print("Count:"); 
-  display.setCursor(80,16);             // Start at top-left corner
+  display.setCursor(80,16);            // Start at top-left corner
   display.print(i);
   display.setCursor(0,32);             // Start at top-left corner
   display.print("Count:"); 
-  display.setCursor(80,32);             // Start at top-left corner
+  display.setCursor(80,32);            // Start at top-left corner
   display.print(j);
   display.setCursor(0,48);             // Start at top-left corner
   display.print("Count:"); 
-  display.setCursor(80,48);             // Start at top-left corner
+  display.setCursor(80,48);            // Start at top-left corner
   display.print(k);
   display.display();
   i++;
-  j++;
+  j--;
   k++;
   delay(100);
  }
